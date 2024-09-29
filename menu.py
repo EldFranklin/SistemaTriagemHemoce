@@ -1,9 +1,12 @@
 
 def menu():
     print("\n=== Menu Principal ===")
-    print("1. Informações sobre Doação de Sangue")
-    print("2. Realizar Triagem")
-    print("3. Sair")
+    print("1. A Importância da Doação de Sangue")
+    print("2. Como Doar")
+    print("3. Realize uma Triagem")
+    print("4. A Importância da Doação de Medula Óssea")
+    print("5. Agendamento")
+    print("6. Sair")
     print("======================")
     op = int(input())
     return op
@@ -11,10 +14,11 @@ def menu():
 
 def informacoes_doacao():
     print("\n=== Informações sobre Doação de Sangue ===")
-    print("A doação de sangue é um ato voluntário que pode salvar vidas.")
-    print("Critérios básicos para doar sangue:")
-    print("- Ter entre 16 e 69 anos (com autorização para menores de idade)")
-    print("- Pesar acima de 50 kg")
-    print("- Estar em boas condições de saúde")
-    print("- Não estar com febre, gripe ou resfriado")
+    print("Qual a importância da doação de sangue?")
+    print('''Doar sangue é um ato de amor, voluntário e altruísta. O sangue é essencial para atendimentos de urgências, grandes cirurgias
+e tratamentos de pessoas com doenças como a falciforme e talassemias. Além disso, é vital para pacientes oncológicos que frequentemente
+necessitam de transfusão. 
+
+É muito importante manter os estoques de sangue sempre abastecidos.
+Seja um doador regular: uma doação pode salvar até quatro vidas!''')
     print("============================================\n")

@@ -14,16 +14,6 @@ def verificar_pressao(pressao_doador):
         print("Sua pressão está boa, pode prosseguir!")
         return True
 # Função para verificar altura do doador
-
-
-def verificar_altura(altura_doador):
-    if altura_doador < 150:  # Exemplo: altura mínima de 150 cm
-        print("Sua altura está abaixo do mínimo recomendado para doação.")
-        return False
-    else:
-        print("Sua altura está adequada, pode prosseguir!")
-        return True
-
  # Função para verificar o peso corporal
 
 
@@ -87,8 +77,7 @@ def triagem(doador):
     peso_ok = verificar_peso(doador.peso)
     temperatura_ok = verificar_temperatura(doador.temperatura)
     pressao_ok = verificar_pressao(doador.pressao_sanguinea)
-    altura_ok = verificar_altura(doador.altura)
     imc_ok = calculaImcDoador(doador.peso, doador.altura)
 
     # Retorna True se todas as verificações forem ok
-    return peso_ok and temperatura_ok and pressao_ok and altura_ok and imc_ok
+    return peso_ok and temperatura_ok and pressao_ok and imc_ok
