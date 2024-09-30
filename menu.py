@@ -11,14 +11,55 @@ def menu():
     op = int(input())
     return op
 
-
 def informacoes_doacao():
-    print("\n=== Informações sobre Doação de Sangue ===")
-    print("Qual a importância da doação de sangue?")
-    print('''Doar sangue é um ato de amor, voluntário e altruísta. O sangue é essencial para atendimentos de urgências, grandes cirurgias
-e tratamentos de pessoas com doenças como a falciforme e talassemias. Além disso, é vital para pacientes oncológicos que frequentemente
-necessitam de transfusão. 
+    print("==== Qual a importância da doação de sangue? ====")
+    print("")
+    print("Doar sangue é um ato de amor voluntário e altruísta.")
+    print("O sangue é essencial para os atendimentos de urgências, realização de cirurgias de grande porte e tratamento")
+    print("em pessoas com doença falciforme e talassemias, por exemplo, além de doenças oncológicas variadas que")
+    print("frequentemente necessitam de transfusão. É muito importante manter os estoques de sangue sempre abastecidos.")
+    print("Seja um doador regular. Uma doação pode salvar até quatro vidas.")
+    print("==============================================================================================================================================\n")
 
-É muito importante manter os estoques de sangue sempre abastecidos.
-Seja um doador regular: uma doação pode salvar até quatro vidas!''')
-    print("============================================\n")
+def como_doar():
+    print("==== Quero doar sangue. Como eu faço? ====")
+    print("")
+    print("Que bom que você quer doar mais tempo e qualidade de vida para as pessoas. Você pode consultar as orientações para")
+    print("os candidatos à doação de sangue ou ir até o hemocentro mais próximo.")
+    print("Ao doar,  seja responsável, e responda sinceramente às perguntas da triagem. Procedimentos como tatuagem, maquiagem")
+    print("definitiva ou até mesmo uma endoscopia, por exemplo, podem abrir uma “janela imunológica” (um período em que possíveis")
+    print("não são detectáveis. Por isso, a sinceridade durante a triagem é essencial.") 
+    print("")
+    print("== Requisitos para doar: ==")
+    print("")
+    print("- Apresentar um documento oficial com foto.")
+    print("- Ter entre 16 e 69 anos(menores de idade precisam da autorização do representante legal. Pessoas com até 69 anos podem doar")
+    print("  desde que a primeira doação tenha sido feita até 60 anos.)")
+    print("- Não estar em jejum e evitar apenas alimentos gordurosos nas três horas que antecedem a doação.")
+    print("- Pesar no mínimo 50 kg")
+    print("- Estar hidratado")
+    print("- Ter dormido pelo menos 6 horas nas últimas 24 horas.")
+    print("==============================================================================================================================================\n")
+
+def medula():
+   print("==== Doação de medula óssea ====")
+   print("")
+   print("A medula óssea, encontrada no interior dos ossos, contém as células-tronco hematopoéticas que produzem os componentes do sangue,")
+   print("incluindo as hemácias ou glóbulos vermelhos, os leucócitos ou glóbulos  brancos que são parte do sistema de defesa do nosso organismo,")
+   print("e as plaquetas, responsáveis pela coagulação.")
+   print("A doação de medula óssea pode ajudar pacientes que precisam de transplante, como única chance de cura para doenças de sangue, como")
+   print("leucemia, linfomas, alguns tipos de anemia, doenças imunes e diversas síndromes.")
+   print("O transplante de medula óssea é um procedimento que substitui células não saudáveis produtoras de sangue por células saudáveis.")
+   print("Com isso, o organismo do paciente transplantado passa a produzir  novas células da medula óssea e do sangue.")
+   print("")
+   print("== Para ser um doador de medula óssea é necessário: ==")
+   print("- Ter entre 18 e 35 anos")
+   print("- Estar em bom estado de saúde.")
+   print("- Estar em bom estado de saúde.")
+   print("- Colher uma amostra de 5ml para o teste de compatibilidade.")
+   print("- Documento oficial com foto.")
+   print("")
+   print("É possível realizar a colheita da amostra junto à doação de sangue, então se você já pretende doar sangue, aproveite e vire um doador de médula.")      
+   print("==============================================================================================================================================\n")
+
+

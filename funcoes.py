@@ -4,16 +4,16 @@ from Doador import Doador
 
 # Função para verificar a pressão sanguínea
 def verificar_pressao(pressao_doador):
-    if pressao_doador < 6:
+    if pressao_doador < 9.6:
         print("Desculpe, sua pressão está muito baixa!")
         return False
-    elif pressao_doador > 14:
+    elif pressao_doador > 14.9:
         print("Sua pressão está muito alta, não é recomendado doar agora!")
         return True
     else:
         print("Sua pressão está boa, pode prosseguir!")
         return True
-# Função para verificar altura do doador
+
  # Função para verificar o peso corporal
 
 
@@ -28,9 +28,8 @@ def verificar_peso(peso_doador):
         print("Seu peso está adequado, pode prosseguir!")
         return True
 
+
 # Função para verificar a temperatura corporal
-
-
 def verificar_temperatura(temperatura_doador):
     if temperatura_doador > 37.5:
         print("Você está febril, não é recomendado que faça a doação hoje!")
@@ -39,9 +38,8 @@ def verificar_temperatura(temperatura_doador):
         print("Sua temperatura está normal, pode prosseguir!")
         return True
 
+
 # Função para pegar as informações para a classe doador
-
-
 def pedir_dados_doador():
     nome = input("Digite o nome do doador: ")
     idade = int(input("Digite a idade do doador: ").replace(",", "."))
@@ -51,15 +49,13 @@ def pedir_dados_doador():
     temperatura = float(
         input("Digite a temperatura corporal do doador (em °C): ").replace(",", "."))
     pressao_sanguinea = float(input(
-        "Digite a pressão sanguínea do doador (valor sistólico): ").replace(",", "."))
+        "Digite a pressão sanguínea do doador (valor sistólico): ").replace(",", ".").replace(":", "."))
 
     # Retorna um objeto do tipo Doador com os dados capturados
     return Doador(nome, idade, peso, altura, temperatura, pressao_sanguinea)
 
-    # Retorna um objeto do tipo Doador com os dados capturados
-    return Doador(nome, idade, peso, temperatura, pressao_sanguinea)
 
-
+# Fun
 def calculaImcDoador(peso_doador, altura_doador):
     imc = peso_doador/altura_doador**2
     if (imc > 40):
@@ -68,9 +64,8 @@ def calculaImcDoador(peso_doador, altura_doador):
     else:
         return True
 
+
 # Função para triagem completa do doador
-
-
 def triagem(doador):
     print(f"Realizando triagem para o doador {doador.nome}...")
 
